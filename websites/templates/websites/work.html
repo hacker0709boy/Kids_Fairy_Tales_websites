@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <title>Kids Fairy Tales</title>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="{% static 'img/apple-icon.png' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/ikonka.png' %}">
+    <!-- Load Require CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Font CSS -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Load Tempalte CSS -->
+    <link rel="stylesheet" href="{% static 'css/templatemo.css' %}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+<!--
+    
+TemplateMo 561 Purple Buzz
+
+https://templatemo.com/tm-561-purple-buzz
+
+-->
+</head>
+ 
+<body>
+       <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand h1" href="{% url 'index' %}">
+
+                <i class='bx bx-buildings bx-sm text-dark'></i><img src="{% static 'img/ikonka.png' %}" width="50" height="50">
+                <span class="text-dark h4" style="font-family: cursive;">KIDS</span> <span class="text-primary h4"  style="font-family: cursive;">Fairy Tales</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{% url 'index' %}" style="font-family: cursive ; font-size: 20px;color: #4146f4;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{% url 'about' %}" style="font-family: cursive ; font-size: 20px;color: #4146f4;">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{% url 'work' %}" style="font-family: cursive ; font-size: 20px;color: #4146f4;">Our Work</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{% url 'contact' %}" style="font-family: cursive ; font-size: 20px;color: #4146f4;">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <a class="nav-link" href="{% url 'worktm' %}"><i class='bx bx-bell bx-sm bx-tada-hover text-primary'><img src="{% static 'img/12.png' %}" style="width: 75%"></i></a>
+                    <a class="nav-link" href="{% url 'work' %}"><i class='bx bx-cog bx-sm text-primary'><img src="{% static 'img/13.png' %}" style="width: 75%"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+
+    <!-- Start Banner Hero -->
+    <div id="index_banner" class="banner-wrapper bg-light w-100 py-5">
+        <div class="banner-vertical-center-work container text-light d-flex justify-content-center align-items-center py-5 p-0">
+                <h1  style="font-family: cursive; text-align: center; font-size: 58px; color: black; ">Our Work</h1>
+            <div class="banner-content col-lg-8 col-12 m-lg-auto text-center"><br><br>
+                
+
+                
+               
+
+            </div>
+        </div>
+    </div>
+    <!-- End Banner Hero -->
+
+    <!-- Start Our Work -->
+    <section class="container py-5">
+        <div class="row justify-content-center my-5">
+            <div class="filter-btns shadow-md rounded-pill text-center col-auto">
+                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4 active" data-filter=".project" href="#" style="font-family: cursive; font-size: 24px;">All</a>
+                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".business" href="#" style="font-family: cursive; font-size: 24px;">Business</a>
+                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".marketing" href="#" style="font-family: cursive; font-size: 24px;">Marketing</a>
+                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".social" href="#" style="font-family: cursive; font-size: 24px;">Social Media</a>
+                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".graphic" href="#" style="font-family: cursive; font-size: 24px;">Graphic</a>
+            </div>
+        </div>
+
+        <div class="row projects gx-lg-5">
+            <a  class="col-sm-6 col-lg-4 text-decoration-none project marketing social business">
+                <div class="service-work overflow-hidden card mb-5 mx-5 m-sm-0">
+                    <img class="card-img-top" src="{% static 'img/pic4.jpg' %}" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title  text-dark" style="font-family: cursive;">Web development</h5>
+                        
+                       
+                    </div>
+                </div>
+            </a>
+            <a  class="col-sm-6 col-lg-4 text-decoration-none project graphic social">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="{% static 'img/pic10.jpg' %}" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title  text-dark" style="font-family: cursive;">Design</h5>
+                      
+                        
+                    </div>
+                </div>
+            </a>
+            <a  class="col-sm-6 col-lg-4 text-decoration-none project marketing graphic business">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="{% static 'img/pic1.jpg' %}" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title  text-dark" style="font-family: cursive;">Artist computer</h5>
+                        
+                       
+                    </div>
+                </div>
+            </a>
+            <a class="col-sm-6 col-lg-4 text-decoration-none project social business">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="{% static 'img/pic2.jpg' %}" alt="..." width="100" height="267">
+                    <div class="card-body">
+                        <h5 class="card-title  text-dark" style="font-family: cursive;">Management</h5>
+                        
+                        
+                    </div>
+                </div>
+            </a>
+            <a  class="col-sm-6 col-lg-4 text-decoration-none project marketing">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="{% static 'img/pic8.jpg' %}" alt="..." >
+                    <div class="card-body">
+                        <h5 class="card-title  text-dark" style="font-family: cursive;">Smart Applications </h5>
+                      
+                        
+                    </div>
+                </div>
+            </a>
+            <a class="col-sm-6 col-lg-4 text-decoration-none project marketing graphic">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="{% static 'img/pic7.jpg' %}" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark" style="font-family: cursive;">Creative Design</h5>
+                        
+                        
+                    </div>
+                </div>
+            </a>
+        </div>
+      
+    </section>
+    <!-- End Our Work -->
+
+    <!-- Start Feature Work -->
+    <section class="bg-light py-5">
+        <div class="feature-work container my-4">
+            <div class="row d-flex d-flex align-items-center">
+                <div class="col-lg-5">
+                    <h3 class="feature-work-title h4 text-muted " style="font-family: cursive;">Featured Work</h3>
+                    <h1 class="feature-work-heading " style="font-family: cursive;">Transform with us</h1>
+                    
+                </div>
+                <div class="col-lg-6 offset-lg-1 align-left">
+                    <div class="row">
+                        <a class="col" data-type="image" data-fslightbox="gallery">
+                            <img class="img-fluid" src="{% static 'img/kitap/modal1.png' %}">
+                        </a>
+                        <a class="col" data-type="image" data-fslightbox="gallery" >
+                            <img class="img-fluid" src="{% static 'img/kitap/modal.png' %}">
+                        </a>
+                    </div>
+                    <div class="row pt-4">
+                        <a class="col" data-type="image" data-fslightbox="gallery" >
+                            <img class="img-fluid" src="{% static 'img/kitap/modal2.png' %}">
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Feature Work -->
+
+
+   <!-- Start Footer -->
+    <footer class="bg-secondary pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="{% url 'index' %}">
+                        <i class='bx bx-buildings bx-sm text-light'></i><img src="{% static 'img/ikonka.png' %}" style="width: 10%">
+                        <span class="text-light h5" style="font-family: cursive;">KIDS</span> <span class="text-light" style="font-family: cursive;">Fairy Tales</span>
+                    </a>
+                    <p class="text-light my-lg-4 my-2" style="font-family: cursive;">
+                        KIDS Fairy Tales produces children's favorite story books and books that tell them.
+                    </p>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="http://facebook.com/">
+                                <i class='bx bxl-facebook-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                                <i class='bx bxl-linkedin-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                <i class='bx bxl-whatsapp-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.flickr.com/">
+                                <i class='bx bxl-flickr-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.medium.com/">
+                                <i class='bx bxl-medium-square bx-md' ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light" style="font-family: cursive;">Our Company</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="{% url 'index' %}" style="font-family: cursive;" >Home</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{% url 'about' %}" style="font-family: cursive;">About Us</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{% url 'work' %}" style="font-family: cursive;">Our Work</a>
+                            </li>
+                            
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{% url 'contact' %}" style="font-family: cursive;">Contact Us</a>
+                            </li>
+                        </ul>
+                </div>
+
+               
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light" style="font-family: cursive;">For Client</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" href="tel:+993-618-529-66" style="font-family: cursive;">+993-618-529-66</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1" href="mailto:info@kidsfairytalescompany.com" style="font-family: cursive;">info@kidsfairytalescompany.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-primary py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light" style="font-family: cursive;">
+                            © Copyright 2021 KIDS Fairy Tales Company. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light " style="font-family: cursive;">
+                            Designed by <a rel="sponsored" class="text-decoration-none text-light" href="mailto:info@kidsfairytalescompany.com" target="_blank"><strong style="font-family: cursive;">Kadyrov</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+    
+    <!-- Lightbox -->
+    <script src="{% static 'js/fslightbox.js' %}"></script>
+    <script>
+        fsLightboxInstances['gallery'].props.loadOnlyCurrentSource = true;
+    </script>
+    <!-- Load jQuery require for isotope -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- Isotope -->
+    <script src="{% static 'js/isotope.pkgd.js' %}"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function() {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>
+     <!-- Bootstrap -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <!-- Templatemo -->
+    <script src="{% static 'js/templatemo.js' %}"></script>
+    <!-- Custom -->
+    <script src="{% static 'js/custom.js' %}"></script>
+<script src="{% static 'js/snow.js' %}"></script>
+</body>
+
+</html>
